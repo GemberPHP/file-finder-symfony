@@ -1,0 +1,2 @@
+# 🫚 Gember File reflector: Symfony Finder
+Gember File finder ([gember/event-sourcing](https://github.com/GemberPHP/event-sourcing)) implementation based on [symfony/finder](https://github.com/symfony/finder).
