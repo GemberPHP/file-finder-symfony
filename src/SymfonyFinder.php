@@ -6,6 +6,7 @@ namespace Gember\FileFinderSymfony;
 
 use Gember\EventSourcing\Util\File\Finder\Finder;
 use SplFileInfo;
+use Override;
 
 final readonly class SymfonyFinder implements Finder
 {
@@ -13,6 +14,7 @@ final readonly class SymfonyFinder implements Finder
         private SymfonyFinderFactory $factory,
     ) {}
 
+    #[Override]
     public function getFiles(string $path): array
     {
         $finder = $this->factory->createFinder();
