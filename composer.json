@@ -1,6 +1,6 @@
 {
     "name": "gember/file-finder-symfony",
-    "description": "Gember File finder (gember/event-sourcing) implementation based on symfony/finder",
+    "description": "Gember Event Sourcing File Finder adapter based on symfony/finder",
     "license": "MIT",
     "type": "library",
     "keywords": [
