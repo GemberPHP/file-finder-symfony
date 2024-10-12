@@ -28,10 +28,12 @@ final class SymfonyFinderTest extends TestCase
     {
         $files = $this->finder->getFiles(__DIR__ . '/TestDoubles');
 
+        sort($files);
+
         self::assertSame([
-            __DIR__ . '/TestDoubles/TestClass.php',
             __DIR__ . '/TestDoubles/Subfolder/AnotherClass.php',
             __DIR__ . '/TestDoubles/Subfolder/TestClass.php',
+            __DIR__ . '/TestDoubles/TestClass.php',
         ], $files);
     }
 }
